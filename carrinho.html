@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="midias/favicon.ico" alt="" width="5%"></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropbtn">Tipos de camiseta</a>
+                    <ul class="dropdown-content">
+                        <li><a href="retro.html">Retro</a></li>
+                        <li><a href="novas.html">Ultimas lançadas</a></li>
+                        <li><a href="classicas.html">Clássicas</a></li>
+                    </ul>
+                </li>
+                <a href="login.html"><button class="button">LOGAR</button></a>
+        
+                <a href="cadastro.html"><button class="button">CADASTRE-SE</button></a>
+        
+            </ul>
+        </nav>
+        <nav class="navsecundaria">
+            <p></p>
+        </nav>
+        </header>
+    <!--conteudo principal da pagina-->
+    <main>
+        <!--seção do carrinho -->
+        <section class="carrinho">
+            <!--tabela de produtos no carrinho-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Produto 1-->
+                    <tr>
+                        <td  class="sla" id="sla"><img src="https://imgcentauro-a.akamaihd.net/768x768/98766801.jpg" alt=""></td>
+                        <td><input type="number" value="1" min="1" class="quantidade">
+                        </td>
+                        <td class="preco-unitario">R$ 130,00</td>
+                        <td class="preco-total">R$ 130,00</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                    </tr>
+                    <!--Produto 2-->
+                    <tr>
+                        <td  class="sla" ><img src="https://imgcentauro-a.akamaihd.net/768x768/99076812.jpg" alt=""></td>
+                        <td>
+                            <input type="number" value="2" min="1" class="quantidade">
+                        </td>
+                        <td class="preco-unitario">140,00</td>
+                        <td class="preco-total">140,00</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                    </tr>
+                      <!--Produto 2-->
+                      <tr>
+                        <td  class="sla" ><img src="https://imgcentauro-a.akamaihd.net/768x768/99024201.jpg" alt=""></td>
+                        <td>
+                            <input type="number" value="2" min="1" class="quantidade">
+                        </td>
+                        <td class="preco-unitario">230,00</td>
+                        <td class="preco-total">230,00</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!--Exxibição do total final-->
+            <div class="total-final">
+                <h3>Total Final: <span id="total-final">R$ 110,00</span></h3>
+            </div>
+
+        </section>
+    </main>
+    <!--adiciona o script para a interatividade-->
+    <footer >
+
+        <a href="#ierene" title="ierene"><img src="midias/favicon.ico" alt="iconetopo" width="10%" ></a>
+        <hr>
+      
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>sobre nos</h2>
+                <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes.</p>
+                </div>
+                <div class="footer-section">
+                    <h2>links rapidos</h2>
+                    <ul>
+                        <li><a href="#home"></a></li>
+                        <li><a href="#sobre"></a></li>
+                        <li><a href="#serviços"></a></li>
+                        <li><a href="#contato"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Contato</h2>
+                    <p>Email: fabgoddamn@yahoo.com</p>
+                    <p>Telefone:(19)9876-5432</p>
+                    <p>Endereço: Rua Onde os Comédia Não Brota, 69, São Paulo, SP</p>
+                <div class="footer-section">
+                    <h2>Siga-nos</h2>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+    <script src="carrinho.js"></script>
+</body>
+</html>

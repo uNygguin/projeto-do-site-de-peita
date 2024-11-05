@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto 1</title>
+    <link rel="stylesheet" href="produto 1.css">
+    
+</head>
+<body>
+ 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="midias/favicon.ico" alt="" width="5%"></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropbtn">Tipos de camiseta</a>
+                    <ul class="dropdown-content">
+                        <li><a href="retro.html">Retro</a></li>
+                        <li><a href="novas.html">Ultimas lançadas</a></li>
+                        <li><a href="classicas.html">Clássicas</a></li>
+                    </ul>
+                </li>
+                <a href="login.html"><button class="button">LOGAR</button></a>
+        
+                <a href="cadastro.html"><button class="button">CADASTRE-SE</button></a>
+        
+            </ul>
+        </nav>
+        <nav class="navsecundaria">
+            <p></p>
+        </nav>
+        </header>
+        <main>
+    <!--seção do produto-->
+    <section class="produto">
+        <div class="imagens-produto">
+            <img src="https://imgcentauro-a.akamaihd.net/768x768/98766801.jpg"
+                alt="Produto principal" class="imagem-principal" id="imagem-principal">
+            <div class="miniaturas">
+
+
+                <img src="https://imgcentauro-a.akamaihd.net/768x768/98766801A1.jpg"
+                    alt="Miniatura 1" class="miniatura" data-imagem="midias/miniatura 1.jpeg">
+
+
+                <img src="https://imgcentauro-a.akamaihd.net/768x768/98766801A2.jpg"
+                    alt="Miniatura 2" class="miniatura" data-imagem="midias/miniatura 2.jpeg">
+
+
+                <img src="https://imgcentauro-a.akamaihd.net/768x768/M134N549A1.jpg"
+                    alt="Miniatura 3" class="miniatura" data-imagem="midias/miniatura 3.jpeg">
+            </div>
+        </div>
+
+
+
+        <!--div que contem os detalhes do produto-->
+        <div class="detalhes-produto">
+            <!--nome do produto-->
+            <h2>Camisa do São Paulo I 24 New Balance Juvenil Torcedor</h2>
+            <!--desccrição do produto-->
+        
+            <!--preço do produto-->
+            <p class="preco">R$ 130,00</p>
+
+            <!--formulario para selecionar tamanho e cor do produto -->
+           <form class="opcoes-compra">
+               <!--seleçao de tamanho--> 
+                <label for="tamanho ">Tamanho:</label>
+                <select id="tamanho">
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>GG</option>
+                </select>
+
+            
+            <!--botao de comprar-->
+            <button type="submit">Comprar</button>
+            </form>
+        </div>
+    </section>
+
+    <!--seçao de comentarios dos clientes-->
+    <section class="comentarios">
+        <h3>comentarios dos clientes</h3> <!--titulo da seçao de comentarios-->
+
+        <!--comentario 1-->
+        <div class="comentario">
+            <!--foto do usuario-->
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAADBAUGAAECBwj/xAA4EAABBAEDAQUGBAUEAwAAAAABAAIDEQQFITESEyJBUWEGFDJxgZEHQqGxFSMzwdFScuHwQ1Oy/8QAGQEAAgMBAAAAAAAAAAAAAAAAAgMAAQQF/8QAJBEAAgICAgICAgMAAAAAAAAAAAECEQMhBDESIjJBE1EjQkP/2gAMAwEAAhEDEQA/AKO0IjR+q0wbI+NH15ETfN4CN6FrZdNCwuyxYwf9NqcYEtgspgA48E4PioLlZH7HbxKopBG93ZEaN1zG2+EwyEnxQoabYOEYNC2yLp5RAxEkVZ3GKF0iAV9VwAdhSYa3YAokgGwdborWojIgfBG7LbhGkKc0LloWuz3RHto0txjwKuiX9kXqGOJIi0gUdjsvINTxfdc/Ig8GvNfJe3ZTKaTtsvJPbWMRa6+hQfG1231T8L2ZeQvWyvyBKyJiRyXkK0GMA7lYtnlYoQdY1PaYy8+D/elWEJ7SiP4hAPN1KpdEj8kXvE7oaBxvumGHvlKYZ2DfCqTrAAdlyJdndh0NwABPxtFBIwi07G7YDxRRKkGobLrpAXAJPC7s7BMAOm0fBGYFw3ZEZatAthWDfmkdAaiA7JqFSOJBva4ZsQER5XF7oGWujjJ+F3yXln4iRdOdivGxdGWk/Ir1DJOx+S81/Eg2/Eqvzf2TMPyAzr+MpTkB4RnAobgthzwNLF0QsVEGmbJ3CD458eYtcGF4AcRsfqkm+qvGjnFztJgxZQGv7Pu7Vdbf9+aTnyfjQ/i4Vlm9juCSXNvne1It+IKOx2GOaRh/I4/dOMmaDbydlzXtnXjpEhAXB/CbZYPe5Ki8fUYC/pB/RPDLx3uAMrbRIFseauwN0oJGl1sNrtsvet3COwWhwFdtdulHPtvUOFzHNRNq0yvElIyibeSiXanj4venkDQonJ9pJZZOjCjcQeDXKPzSFvG2WxzW1aASAdjfiq6x2ozuBeQK4tSuK93SGPdbxyo3ZFGg+Vux3yVU17QH65m4jAS2KNpdI4fSgrTPQgd1eSDkGb+FXj0x7i3vEcAkA/YKk2ui/FSpM8f9pdMj0nVpcSKUyMaAQ48ixwVDPU17RZTM3WcueM9wv6Wk+IAr+yiJFuh8TmZK8nQueVi07lYiFjYohW72LfHKezk3MLnV6tcP8hVFvCmvZWfsNbx7NNkPQfqlZoeUGP42TwyWXBxHvkg/6VxlRv6SRYb5g0uHsfFnSdR26iApB0bZIFyrO1KiCa+L3jsWZLnSn/xtbbv0UXm6iYMqKJrcvtJiREC346u6+xVlgxo8TIDo4+lw36m835pHUMCGXKGSJeiRpJbx3b5rytOxuH9zPljk/wAxHE1nLjexjnOaXNDml3DgrHpupS5gAJB81WMyISTxubK5vQKbQFClZdLhZG2N8YALq6kuUt6GxTr27LDGxxYG34JXNZJEwuc6mgXZUnAAS0JbPiEzXNIJHl5piWgL2U/Jy2OmYxvVLK800HYAeaUin1WLUoIGFsEUrHl8rIxUZaao2m5IIpM1zmxOMgduSePkpfExYnvD34/VJW5dHaPDOMH7KwM+Kc/iw+XFqEDMWXFynSOLA6aJ7RRsceYKlsH+axsne6q8fD0W42PfXWHDysUn44w1uwVvcrRF6xSFsl1QuUfqWoyRezefOAGuhgd0f7q2/Wk3lnZ18BQfts73H2WyIiR1TzBra8rv+ykFciTaUGeVONBLyO2RZDSWfa6BxwbnbrFyeVihZINKPiy9hkRS/wDreHfYpZi78FT6KWnZ6Rqbu/jED4w439v8J3CPXCB6WkdQHTg6fvfTt5/lG6Y059RgLkNbO/HcbG+zDXB77dfogZLsai4RWfkpCJ7XjpI2C37vGXXQV0yMhoNL96qSUFkYN1XKkI4Gx9IbQA4TkhDWUNvqgjd4+YQtFp2SkIqUAeAXfQDIbFriD+r9EUCiU+PQh9kdqGk48pMkb+zkG91sgY8eVjPp1HbkqasGl30NcLO6vx/RPLWwWKXvZ1S7nyTTiGsQg2vhWPOxRAdsj8w3DIQa25VX/FSboxdMgG9lzyfkB/lWXOcRA8Vfoqf+K2VE6bBxmm5GMc9w/wBINV+36I8PyA5HwPPpCgvKI71QnhbTmATysWzysULG43IoOyVjcjtcoUW3C1z37GxsCVju0i/OOHgD91YMI0DXHC8/0qTss+F9X3qV6wZC15b4Xa5vIgoy0dbiZHOGybgcK3TLpBGzqKRiftwh505EfSLsjhKTNVbF8rPdLltx4juTvXkpHCDy+iL35UbgYHYt94d/WO4tOY2qM7QxzRujePA8EehVJFtr6J7HvrRpGk8cpXHy43OHS7wQ87U+ypmNGZZjsK4HzPgnKqM8rsFkZL8bJDD8LhspLDk6wD4Uk5Md2VCHP6e157psBcYDzE/s37FqpOmW0miYIQZDQoonWCLSmTNV3wjYuKI3WJOnGlcHAU08rxieaSeR0s0j5ZH7ue91k/Vet+00nZaNlymt4XEehpeQ7AJ/HXbM3LfSOHIb0RyC8rSYwZ5WLhx3WKiBGPRmPSTSitcrKH45CHNLTRBsK86bkiaGHJHe6hvXgvPGvVn9kswVJjOI27zb/VZuRC42a+JPxlT+y7Y8wc3fZy7kLW7nvO8EjiPIcLdsdwa8F3qeR0N6gL22CwHTbDNyJHuLRxwV0cYvdbRuPJROnx6o2J2Q90Qa892Mt4HzR3/xWT4JmED8rbarWwkmx0RTRyUOoWpGHHewNLeok82oOPJ1eNnSYXO9bB/dNxS6z3XdIDTyHv4+lI42SeMnjK+Npt2zfVY2RsjmOIqzV+Ki52axlYz+j3VjvB1E36Iel5M5DY8qN7ZGu722wKJsS1RZGP6Rv4eaVc/rm6fAUtyyNJAv7oEjmsPUdgSLPmrAK37fZIg0gxU7qld0Dy5tecFei/iFj3oMOR5Tt+xul5qXDwWrB8TDyX7mnlDeVt5QZHJ4ijh3KxcF26xUQ5aUQFaxYJsiVsWPG6SR3DQLtXDTPw/1CaNkmfNHiB3Efxvr1rYKFFTDlYPZPGmkz+0MR7J0Tm9ZHjsRX2U+NG0zT5OxxsSKSVpp00w6+k+g4tSGNGWyNcSbB8Vkz8iK9UbePx5NqbMgcGAGzVb3+yYx3Ne8NokA7X4oGbE2F75mtJDtyAdh6/JBxcgl3U3+mOPmstG1umWFzmfCW16JTI64hbAfujwlsrfi3q0ZkEbjU248kKGJkO3UJQ6iw2DypPEyHT0X2SOExHj4wf3WivVNjEjodnQ9AmKypTCxyAAE+STym9cgkadrohMkNiaesjjgpCbMDHvDtgPLwRU2KboZtzdi4WFqIDIyWM+Jo7z/AJDw+6jffu0lETB1ucBQU3p0XZMA6rcTbiFYF2b1fDizcMw5EbXxuItrhYVE1H2EgcXPxZ5ISeAR1NH916PkDqaAPNCdFbaQqcovRcscZqmeQv8AYTWnlwxfdsivyskp1fIgKu6lpmoaaenPw5YCNrcwgFe9nFAIcw9Eg3a9uxClcUDPwSciOOTcskY9gINei2YcvnpmHNh/HtdHy+StL6Dzvw+9l8rIdK/S2xuPIhJY37BaTqM9kRoOgafokTm4kNzOG8rjbnfX+ylnx9liZOS495kZc37IuNBbQTZK3qrSdDy2sG/ZOP7oJPRce0VKCCo22LJAJvzTTI6aAu8enwsf4FoRQ2gSVxpPZ3l0BmHXGCRZOxHmoHLxHxSiXHNEblh4KsDCBYdxaVyIx3iRsU2MgJRsSxdSBpjiWSj4mnlScGoFzeovoKIyMSGUB5PS9vBHKVLc2B4PW149Ruf1R6YvyaLEc8ieN/X3KOykW6mWsJLiA3xPiqX281tHYnqHHdP+UwJ87IaY+guJ4plfuUaRTnZO5+o/yw6V3SDuCTz6KPjlyM2UsgiLWg31EVsNr9F1g6RLNJeRIQ4C2hu5/wCPopyGFkEbY2ta2hwEVpAU2a07CZighgDn+LiOVN4raO/P7JLGHXxakYu62kNjKDHwXXTsufJdg7IWQ56U5orf5OSfAzH/AOQk5ZGxxuc410i0/pLHs05jninSW8/XdPwL2M/IfqMOaNtvBaRS0LFsMNFcgjbG4Bo+6I6Nr8TIY4bFrgfssWIH0RdlE0Z7nYUYJtSh3FLFi5Eu2d76F63+qHNvt4LFipEE92kkErC0GrW1iYhUjccTbLqspzHaDaxYmoSMtPTG4ADuuFfVMxsHUQdwsWKMOI7itAIrzTzOVixCEwoRPBYsVgCGod+THhPwSytY+vK1bKAa0AUB4LFi04DLyu0cnlbWLFpMh//Z" alt="foto de João" class="foto-usuario">
+            <!--nome e depoimento do usuario-->
+            <p><strong>João:</strong> <br>
+                Muito bom, não tenho dinheiro para comprar mas so de ver ele em ação, ja fico feliz</p>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+    
+        <div class="footer-container">
+            
+            <div class="footer-section">
+                <h2>links rapidos</h2>
+                <ul>
+                    <li><a href="#home"></a></li>
+                    <li><a href="#sobre"></a></li>
+                    <li><a href="#serviços"></a></li>
+                    <li><a href="#contato"></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Contato</h2>
+                <p>Email: fabgoddamn@yahoo.com</p>
+                <p>Telefone:(19)9876-5432</p>
+                <p>Endereço: Rua Onde os Comédia Não Brota, 69, São Paulo, SP</p>
+                <div class="footer-section">
+                    <h2>Siga-nos</h2>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+</main>
+<script src="produto 1.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto 1</title>
+    <link rel="stylesheet" href="produto 1.css">
+    
+</head>
+<body>
+ 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="midias/favicon.ico" alt="" width="5%"></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropbtn">Tipos de camiseta</a>
+                    <ul class="dropdown-content">
+                        <li><a href="retro.html">Retro</a></li>
+                        <li><a href="novas.html">Ultimas lançadas</a></li>
+                        <li><a href="classicas.html">Clássicas</a></li>
+                    </ul>
+                </li>
+                <a href="login.html"><button class="button">LOGAR</button></a>
+        
+                <a href="cadastro.html"><button class="button">CADASTRE-SE</button></a>
+        
+            </ul>
+        </nav>
+        <nav class="navsecundaria">
+            <p></p>
+        </nav>
+        </header>
+        <main>
+    <!--seção do produto-->
+    <section class="produto">
+        <div class="imagens-produto">
+            <img src="https://imgcentauro-a.akamaihd.net/768x768/99076812.jpg"
+                alt="Produto principal" class="imagem-principal" id="imagem-principal">
+            <div class="miniaturas">
+
+
+                <img src="https://imgcentauro-a.akamaihd.net/768x768/99076812A1.jpg"
+                    alt="Miniatura 1" class="miniatura" data-imagem="midias/miniatura 1.jpeg">
+
+
+                <img src="https://imgcentauro-a.akamaihd.net/768x768/99076812A4.jpg"
+                    alt="Miniatura 2" class="miniatura" data-imagem="midias/miniatura 2.jpeg">
+
+
+                <img src="https://imgcentauro-a.akamaihd.net/768x768/99076812A5.jpg"
+                    alt="Miniatura 3" class="miniatura" data-imagem="midias/miniatura 3.jpeg">
+            </div>
+        </div>
+
+
+
+        <!--div que contem os detalhes do produto-->
+        <div class="detalhes-produto">
+            <!--nome do produto-->
+            <h2>Camisa do Fluminense III 24 Umbro Masculina Torcedor</h2>
+            <!--desccrição do produto-->
+        
+            <!--preço do produto-->
+            <p class="preco">R$ 140,00</p>
+
+            <!--formulario para selecionar tamanho e cor do produto -->
+           <form class="opcoes-compra">
+               <!--seleçao de tamanho--> 
+                <label for="tamanho ">Tamanho:</label>
+                <select id="tamanho">
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>GG</option>
+                </select>
+
+            
+            <!--botao de comprar-->
+            <button type="submit">Comprar</button>
+            </form>
+        </div>
+    </section>
+
+    <!--seçao de comentarios dos clientes-->
+    <section class="comentarios">
+        <h3>comentarios dos clientes</h3> <!--titulo da seçao de comentarios-->
+
+        <!--comentario 1-->
+        <div class="comentario">
+            <!--foto do usuario-->
+            <img src="data:image/jpeg;base64,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" alt="foto de João" class="foto-usuario">
+            <!--nome e depoimento do usuario-->
+            <p><strong>Junior:</strong> <br>
+              muito confortavel dei logo 5 stars</p>
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+    
+        <div class="footer-container">
+            
+            <div class="footer-section">
+                <h2>links rapidos</h2>
+                <ul>
+                    <li><a href="#home"></a></li>
+                    <li><a href="#sobre"></a></li>
+                    <li><a href="#serviços"></a></li>
+                    <li><a href="#contato"></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Contato</h2>
+                <p>Email: fabgoddamn@yahoo.com</p>
+                <p>Telefone:(19)9876-5432</p>
+                <p>Endereço: Rua Onde os Comédia Não Brota, 69, São Paulo, SP</p>
+                <div class="footer-section">
+                    <h2>Siga-nos</h2>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+</main>
+<script src="produto 1.js"></script>
+</body>
+</html>
